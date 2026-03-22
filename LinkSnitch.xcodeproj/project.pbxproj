@@ -6,9 +6,48 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		F28E237F2F704795008F30BF /* LinkSnitchShare.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F28E23752F704794008F30BF /* LinkSnitchShare.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F28E237D2F704795008F30BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F28E235B2F70463D008F30BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F28E23742F704794008F30BF;
+			remoteInfo = LinkSnitchShare;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F28E23842F704795008F30BF /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F28E237F2F704795008F30BF /* LinkSnitchShare.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		F28E23632F70463D008F30BF /* LinkSnitch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LinkSnitch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F28E23752F704794008F30BF /* LinkSnitchShare.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = LinkSnitchShare.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		F28E23802F704795008F30BF /* Exceptions for "LinkSnitchShare" folder in "LinkSnitchShare" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = F28E23742F704794008F30BF /* LinkSnitchShare */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		F28E23652F70463D008F30BF /* LinkSnitch */ = {
@@ -16,10 +55,25 @@
 			path = LinkSnitch;
 			sourceTree = "<group>";
 		};
+		F28E23762F704794008F30BF /* LinkSnitchShare */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				F28E23802F704795008F30BF /* Exceptions for "LinkSnitchShare" folder in "LinkSnitchShare" target */,
+			);
+			path = LinkSnitchShare;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		F28E23602F70463D008F30BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F28E23722F704794008F30BF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -33,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				F28E23652F70463D008F30BF /* LinkSnitch */,
+				F28E23762F704794008F30BF /* LinkSnitchShare */,
 				F28E23642F70463D008F30BF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				F28E23632F70463D008F30BF /* LinkSnitch.app */,
+				F28E23752F704794008F30BF /* LinkSnitchShare.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -55,10 +111,12 @@
 				F28E235F2F70463D008F30BF /* Sources */,
 				F28E23602F70463D008F30BF /* Frameworks */,
 				F28E23612F70463D008F30BF /* Resources */,
+				F28E23842F704795008F30BF /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				F28E237E2F704795008F30BF /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				F28E23652F70463D008F30BF /* LinkSnitch */,
@@ -69,6 +127,28 @@
 			productName = LinkSnitch;
 			productReference = F28E23632F70463D008F30BF /* LinkSnitch.app */;
 			productType = "com.apple.product-type.application";
+		};
+		F28E23742F704794008F30BF /* LinkSnitchShare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F28E23812F704795008F30BF /* Build configuration list for PBXNativeTarget "LinkSnitchShare" */;
+			buildPhases = (
+				F28E23712F704794008F30BF /* Sources */,
+				F28E23722F704794008F30BF /* Frameworks */,
+				F28E23732F704794008F30BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				F28E23762F704794008F30BF /* LinkSnitchShare */,
+			);
+			name = LinkSnitchShare;
+			packageProductDependencies = (
+			);
+			productName = LinkSnitchShare;
+			productReference = F28E23752F704794008F30BF /* LinkSnitchShare.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -81,6 +161,9 @@
 				LastUpgradeCheck = 2630;
 				TargetAttributes = {
 					F28E23622F70463D008F30BF = {
+						CreatedOnToolsVersion = 26.3;
+					};
+					F28E23742F704794008F30BF = {
 						CreatedOnToolsVersion = 26.3;
 					};
 				};
@@ -100,12 +183,20 @@
 			projectRoot = "";
 			targets = (
 				F28E23622F70463D008F30BF /* LinkSnitch */,
+				F28E23742F704794008F30BF /* LinkSnitchShare */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		F28E23612F70463D008F30BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F28E23732F704794008F30BF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +213,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F28E23712F704794008F30BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F28E237E2F704795008F30BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F28E23742F704794008F30BF /* LinkSnitchShare */;
+			targetProxy = F28E237D2F704795008F30BF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		F28E236C2F704641008F30BF /* Debug */ = {
@@ -310,6 +416,62 @@
 			};
 			name = Release;
 		};
+		F28E23822F704795008F30BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R42FQ8ZSC7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LinkSnitchShare/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = LinkSnitchShare;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shachaf.LinkSnitch.LinkSnitchShare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F28E23832F704795008F30BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R42FQ8ZSC7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LinkSnitchShare/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = LinkSnitchShare;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shachaf.LinkSnitch.LinkSnitchShare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -327,6 +489,15 @@
 			buildConfigurations = (
 				F28E236F2F704641008F30BF /* Debug */,
 				F28E23702F704641008F30BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F28E23812F704795008F30BF /* Build configuration list for PBXNativeTarget "LinkSnitchShare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F28E23822F704795008F30BF /* Debug */,
+				F28E23832F704795008F30BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
