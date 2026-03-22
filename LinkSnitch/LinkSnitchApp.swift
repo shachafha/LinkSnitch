@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct LinkSnitchApp: App {
+    @StateObject private var historyStore = LinkHistoryStore()
+
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(historyStore)
         }
     }
 }
