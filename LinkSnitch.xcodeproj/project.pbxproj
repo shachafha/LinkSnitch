@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F28E237F2F704795008F30BF /* LinkSnitchShare.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F28E23752F704794008F30BF /* LinkSnitchShare.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F28E23A92F707076008F30BF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F28E23A82F707076008F30BF /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,7 @@
 /* Begin PBXFileReference section */
 		F28E23632F70463D008F30BF /* LinkSnitch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LinkSnitch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F28E23752F704794008F30BF /* LinkSnitchShare.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = LinkSnitchShare.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		F28E23A82F707076008F30BF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -95,6 +97,7 @@
 				F28E23652F70463D008F30BF /* LinkSnitch */,
 				F28E23762F704794008F30BF /* LinkSnitchShare */,
 				F28E23642F70463D008F30BF /* Products */,
+				F28E23A82F707076008F30BF /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -200,6 +203,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F28E23A92F707076008F30BF /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
